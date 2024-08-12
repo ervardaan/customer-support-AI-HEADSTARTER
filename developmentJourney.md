@@ -37,3 +37,7 @@
                 - inside this await for loop, make a const variable called `content` which calls `choices() method` on `chunk` we got above and get first element of this array after applying `choices()`- now check if the value is equal to `.delta` or `.content` using `?`
                 - if content variable gets some value, then create another const variable called text and use `encode() method` with `content` as parameter on `encoder` variable we defined above
                 - then call `enqueue()` method with text as parameter on `controller` we got as parameter above
+        - CATCH block
+            - get `err` as error and use `.error()` method on controller object with parameter `err`
+        - FINALLY block
+            - call `close() method` on controller object
