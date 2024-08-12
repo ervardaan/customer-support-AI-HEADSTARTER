@@ -23,3 +23,8 @@
     - create a const variable called openai which is an object of class `openAI` whose non-parameterized constructor is called to make this `openai` object
     - create a const `data` variable to get json content from `req` parameter using `await` call and using `.json() function` on `req object`
     - create another const variable called `completion` which calls `openai.chat.completions` and calls `.create()` method on this object using `await cycle`
+        - make an array called `messages` which contains one element
+            - this one element consists of `role` set to `system` and `content` set to `systemPrompt`
+            - second thing the array `messages` contains is `spreading` code which spreads `data` variable we made earlier
+        - make another element aside the messages array called `model` set to `gpt-4o-mini`
+        - create 3rd element called `stream` and set it to `true`
