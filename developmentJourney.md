@@ -28,3 +28,7 @@
             - second thing the array `messages` contains is `spreading` code which spreads `data` variable we made earlier
         - make another element aside the messages array called `model` set to `gpt-4o-mini`
         - create 3rd element called `stream` and set it to `true`
+- create a new variable after completion called `stream` and instantiate it to object to class `ReadableStream` using non parameterized constructor
+    - create a new async function called `start` and give it a parameter `controller`
+        - inside this async start method, create a const variable called `encoder` which gets instantiated to object of class `TextEncoder` with non parameterized constructor
+            - inside this method for TextEncoder, use a try catch block
