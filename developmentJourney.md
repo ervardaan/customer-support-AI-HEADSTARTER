@@ -41,3 +41,4 @@
             - get `err` as error and use `.error()` method on controller object with parameter `err`
         - FINALLY block
             - call `close() method` on controller object
+- return a new `NextResponse` object with parameter `stream` after `stream` is defined fully now
