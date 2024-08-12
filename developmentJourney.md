@@ -22,3 +22,4 @@
     - create a method which is using await and async cycle to get json data from openAI- this function's name is `POST` and gets a `req` parameter
     - create a const variable called openai which is an object of class `openAI` whose non-parameterized constructor is called to make this `openai` object
     - create a const `data` variable to get json content from `req` parameter using `await` call and using `.json() function` on `req object`
+    - create another const variable called `completion` which calls `openai.chat.completions` and calls `.create()` method on this object using `await cycle`
