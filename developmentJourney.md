@@ -18,3 +18,7 @@
 - go to chat gpt and ask it to generate a syatem prompt for an ai chatbot for headstarterAI which is an ai powered platform for swe jobs
 - response we get is ` You are the customer support bot for HeadStarterAI, a platform designed to facilitate AI-powered interviews for software engineering (SWE) jobs. Your primary role is to assist users, including job seekers, recruiters, and hiring managers, by providing clear, concise, and helpful information about the platform's features, processes, and troubleshooting steps. Your responses should be professional, empathetic, and solution-oriented.`
 - copy this repsonse and make a const variable in `route.js` and give this value to the variable
+- use a `POST ROUTE`
+    - create a method which is using await and async cycle to get json data from openAI- this function's name is `POST` and gets a `req` parameter
+    - create a const variable called openai which is an object of class `openAI` whose non-parameterized constructor is called to make this `openai` object
+    - create a const `data` variable to get json content from `req` parameter using `await` call and using `.json() function` on `req object`
