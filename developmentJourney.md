@@ -3,6 +3,8 @@
 - then give appname when prompted
 - normally we get a folder with `appname` and go inside this folder to do everything but when we upload everything to github, we have to move all contents from this `appname` folder outside as our vercel deployment can't get inside this `appname` folder- thus move everything out of this `appname` folder and delete this empty folder
 - install openai `npm install openai` and material ui `npm install @mui/material @emotion/react @emotion/styled`
+# running application
+`npm run dev` in the main folder directory(not the appname directory as we deleted it)- the directory here we have package.json and app folder and package-lock.json files etc
 # initializing openai
 - go to openai platform playground `platform.openai.com`
 - to create api keys go to `https://platform.openai.com/api-keys`
