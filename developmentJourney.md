@@ -44,3 +44,9 @@
         - FINALLY block
             - call `close() method` on controller object
 - return a new `NextResponse` object with parameter `stream` after `stream` is defined fully now
+# setting up home page
+- go to page.js file and at top as first line add `use client` to use application as client
+- to store our messages, create a state variable and import `useState` from `react` into page.js
+- create a 2 element array `[messages,setMessages]` and call `useState()` method
+    - give `role` as `assistant` as a sring
+    - give `content` as some intro greeting but under backticks and not under quotes
