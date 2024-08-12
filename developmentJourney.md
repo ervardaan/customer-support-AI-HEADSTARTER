@@ -50,3 +50,5 @@
 - create a 2 element array `[messages,setMessages]` and call `useState()` method
     - give `role` as `assistant` as a sring
     - give `content` as some intro greeting but under backticks and not under quotes
+- for testing, create another `[message,setMessage]` const array and use `useState()` with empty string in it
+- now return a `Box` tag
