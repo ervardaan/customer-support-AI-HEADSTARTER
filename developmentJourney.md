@@ -15,3 +15,6 @@
 # working on route.js
 - import `NextResponse` from `next/server`
 - import `OpenAI` from `openai`
+- go to chat gpt and ask it to generate a syatem prompt for an ai chatbot for headstarterAI which is an ai powered platform for swe jobs
+- response we get is ` You are the customer support bot for HeadStarterAI, a platform designed to facilitate AI-powered interviews for software engineering (SWE) jobs. Your primary role is to assist users, including job seekers, recruiters, and hiring managers, by providing clear, concise, and helpful information about the platform's features, processes, and troubleshooting steps. Your responses should be professional, empathetic, and solution-oriented.`
+- copy this repsonse and make a const variable in `route.js` and give this value to the variable
