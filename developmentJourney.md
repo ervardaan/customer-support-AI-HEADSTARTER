@@ -31,4 +31,9 @@
 - create a new variable after completion called `stream` and instantiate it to object to class `ReadableStream` using non parameterized constructor
     - create a new async function called `start` and give it a parameter `controller`
         - inside this async start method, create a const variable called `encoder` which gets instantiated to object of class `TextEncoder` with non parameterized constructor
-            - inside this method for TextEncoder, use a try catch block
+        - after the encoder variable, use a try catch and finally block
+        - TRY block
+            - use `await` cycle with for loop and give await cycle a constant variable `chunk` using `of` keyword` for completion variable we defined above
+                - inside this await for loop, make a const variable called `content` which calls `choices() method` on `chunk` we got above and get first element of this array after applying `choices()`- now check if the value is equal to `.delta` or `.content` using `?`
+                - if content variable gets some value, then create another const variable called text and use `encode() method` with `content` as parameter on `encoder` variable we defined above
+                - then call `enqueue()` method with text as parameter on `controller` we got as parameter above
