@@ -64,3 +64,11 @@
         - spread messages using triple dots
         - role is 'user' and content is 'message
         - role is 'assistant' and content is empty string
+    - get and send response: creat a const variable called `response` and call `fetch()` method
+        - location(1st parameter) is '/api/chat' folder
+        - 2nd parameter is a POST request
+            - method is post
+            - headers is composed inside curly braces
+                - content type is json
+            - send body which is a json string- use `stringfy` method which forms a string from `messages` array
+                - ...messages, {role:'user',content, and messages} are given as parameters to `stringfy()` inside []
