@@ -52,3 +52,7 @@
     - give `content` as some intro greeting but under backticks and not under quotes
 - for testing, create another `[message,setMessage]` const array and use `useState()` with empty string in it
 - now return a `Box` tag
+    - inside the box, put a `stack`
+        - inside this, put another `stack` in which we map each messaege to its index
+            -  we justify content and backgroound color based on role of the message-so use a ternary operator
+            -  the content of `stack` is `message.content`
