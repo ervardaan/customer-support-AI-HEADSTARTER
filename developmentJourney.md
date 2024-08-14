@@ -73,9 +73,14 @@
             - send body which is a json string- use `stringfy` method which forms a string from `messages` array
                 - ...messages, {role:'user',content:message} are given as parameters to `stringfy()` inside []
     - after we get this response, we use `then()` on this response result( this is async function) with one parameter `res`
+        - define a reader object from `res.body.getReader()`
+        - define a decoder object from TextDecoder() class' non parameterized constructor
+        - define an empty string called `result`
         - return `reader.read()` function and apply `then()` on it
             - inside then(), we create a new function `processText` and give it parameters `{done,value}`
-                - inside this function, we call setMessages with `messages` array as parameter
+                - inside the function, check if `done` is true and if yes, return result
+                - create a `text` const variable and call `decoder.decode()` function with `value|| new int8array(),{stream:true}`
+                -  we call setMessages with `messages` array as parameter
                     - get last message and list of all other messages from messages array
                     - return the followsing from this setMessages() function in form of an array
                         - otherMessages array
