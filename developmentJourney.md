@@ -71,4 +71,4 @@
             - headers is composed inside curly braces
                 - content type is json
             - send body which is a json string- use `stringfy` method which forms a string from `messages` array
-                - ...messages, {role:'user',content, and messages} are given as parameters to `stringfy()` inside []
+                - ...messages, {role:'user',content:message} are given as parameters to `stringfy()` inside []
