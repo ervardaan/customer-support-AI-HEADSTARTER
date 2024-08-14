@@ -72,3 +72,8 @@
                 - content type is json
             - send body which is a json string- use `stringfy` method which forms a string from `messages` array
                 - ...messages, {role:'user',content:message} are given as parameters to `stringfy()` inside []
+    - after we get this response, we use `then()` on this response result( this is async function) with one parameter `res`
+        - return `reader.read()` function and apply `then()` on it
+            - inside then(), we create a new function `processText` and give it parameters `{done,value}`
+                - inside this function, we call setMessages with one `message` as parameter
+                    - get last message and list of all other messages
