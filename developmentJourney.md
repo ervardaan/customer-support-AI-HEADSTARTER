@@ -57,3 +57,10 @@
             -  we justify content and backgroound color based on role of the message-so use a ternary operator
             -  the content of `stack` is `message.content`
     - now place another stack which gives textfield and a `send button`
+### creating a hover function
+- an async function
+    - setMessage wcalled with empty string
+    - call setMessages() with `messages` and give an array
+        - spread messages using triple dots
+        - role is 'user' and content is 'message
+        - role is 'assistant' and content is empty string
