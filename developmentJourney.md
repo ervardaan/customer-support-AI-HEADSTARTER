@@ -56,3 +56,4 @@
         - inside this, put another `stack` in which we map each messaege to its index
             -  we justify content and backgroound color based on role of the message-so use a ternary operator
             -  the content of `stack` is `message.content`
+    - now place another stack which gives textfield and a `send button`
