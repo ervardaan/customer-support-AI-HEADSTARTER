@@ -85,3 +85,4 @@
                     - return the followsing from this setMessages() function in form of an array
                         - otherMessages array
                         - one element consisting of `lastMessage` and content:lastMessage.content+text
+- add this call to `sendMessage` to `send` button when the button is clicked
